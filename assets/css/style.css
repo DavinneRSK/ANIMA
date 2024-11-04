@@ -464,7 +464,9 @@ pre {
   @media (min-width: 1200px) {
     .container {
       max-width: 1140px; } }
-
+.container-home {
+  margin-left: 10% !important;
+}
 .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
   width: 100%;
   padding-right: 15px;
@@ -8386,7 +8388,7 @@ h1, h2, h3, h4, h5,
   color: #4986fc !important; }
 
 .ftco-navbar-light {
-  background: transparent !important;
+  background: linear-gradient(to right, #228eed96 0%, #e23072b8 100%) !important;
   position: absolute;
   top: -8px;
   left: 0;
@@ -8657,7 +8659,7 @@ h1, h2, h3, h4, h5,
     font-weight: 700;
     text-transform: uppercase; }
   .slider-text h1 {
-    font-size: 50px;
+    font-size: 67px;
     /* color: #fff; */
     background-image: linear-gradient(to right, #ed7d22 0%, #e23072 100%);
     -webkit-background-clip: text;
