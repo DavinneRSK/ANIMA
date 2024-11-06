@@ -464,9 +464,14 @@ pre {
   @media (min-width: 1200px) {
     .container {
       max-width: 1140px; } }
-.container-home {
-  margin-left: 10% !important;
+
+@media (min-width: 992px) {
+  .container-home {
+    margin-left: 10% !important;
+  }
 }
+
+
 .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
   width: 100%;
   padding-right: 15px;
@@ -3650,7 +3655,7 @@ input[type="button"].btn-block {
   display: inline-block;
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
-  margin-right: 1rem;
+  /* margin-right: 1rem; */
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap; }
@@ -10266,6 +10271,25 @@ textarea.form-control {
       outline: none;
       border-color: #ffffff00;
     background-color: #ffffff00;
+  }
+
+  .logo {
+    content: url("../../images/logo_resolvaki_branco_nav_bar.png");
+  }
+
+  #ftco-navbar.awake .logo {
+    content: url("../../images/logo_resolvaki_color_nav_bar.png");
+  }
+
+  @media (max-width: 992px) {
+    .logo-nav {
+      width: 30%;
+      height: auto;
+    }
+    .logo {
+      content: url("../../images/logo_resolvaki_color_nav_bar.png");
+    }
+    
   }
 
 @-webkit-keyframes loader-rotate {
