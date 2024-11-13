@@ -83,7 +83,19 @@ abbr[data-original-title] {
   text-decoration: underline dotted;
   cursor: help;
   border-bottom: 0;
-  text-decoration-skip-ink: none; }
+  text-decoration-skip-ink: none; 
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 
 address {
   margin-bottom: 1rem;
@@ -10274,8 +10286,9 @@ textarea.form-control {
   }
 
   .logo {
-    content: url("../../images/logo_resolvaki_branco_nav_bar.png");
+    /* content: url("../../images/logo_resolvaki_branco_nav_bar_2.png"); */
     cursor: pointer;
+    max-width: 150px;
   }
 
   /* #ftco-navbar.awake .logo {
@@ -10323,4 +10336,4 @@ textarea.form-control {
     stroke-dashoffset: -35px; }
   100% {
     stroke-dasharray: 89, 200;
-    stroke-dashoffset: -136px; } }
+    stroke-dashoffset: -136px; } }  
