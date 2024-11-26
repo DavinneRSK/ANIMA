@@ -27,6 +27,7 @@
   --light: #f8f9fa;
   --dark: #343a40;
   --primary-one:rgba(226,48,114,1);
+  --primary-second: rgba(34,142,237,1);
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -8406,7 +8407,7 @@ h1, h2, h3, h4, h5,
   color: #4986fc !important; }
 
 .ftco-navbar-light {
-  background: linear-gradient(to right, #228eed96 0%, #e23072b8 100%) !important;
+  background: linear-gradient(to right, var(--primary-second) 0%, var(--primary-one) 100%) !important;
   position: absolute;
   top: -8px;
   left: 0;
@@ -10426,6 +10427,13 @@ textarea.form-control {
   .home {
     background-image: url('/images/bg_1.jpg');
     align-content: center;
+  }
+
+  @media (max-width: 767.98px) {
+    #home {
+      background-image: url('/images/bg_1.jpg');
+      align-content: flex-end;
+    }
   }
 
   @media (max-width: 992px) {
